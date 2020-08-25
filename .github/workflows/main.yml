@@ -25,7 +25,7 @@ jobs:
         echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/4.2 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-4.2.list
         sudo apt-get update
         sudo apt-get install -y mongodb-org
-        sudo apt-get install -y --allow-downgrades mongodb-org=4.2 mongodb-org-server=4.2 mongodb-org-shell=4.2 mongodb-org-mongos=4.2 mongodb-org-tools=4.2
+        sudo apt-get install -y --allow-downgrades mongodb-org=4.2.9 mongodb-org-server=4.2.9 mongodb-org-shell=4.2.9 mongodb-org-mongos=4.2.9 mongodb-org-tools=4.2.9
     - name: Start MongoDB
       run: sudo systemctl start mongod
     - name: Run tests
